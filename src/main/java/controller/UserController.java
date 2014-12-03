@@ -22,7 +22,6 @@ public class UserController {
 	private UserService userService;
 
 
-
 	@RequestMapping("/getAllUser")
 	public String getAllUser(HttpServletRequest request) {
 		request.setAttribute("userList",userService.getAll(User.class));
